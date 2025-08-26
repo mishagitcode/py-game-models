@@ -49,7 +49,7 @@ class Player(models.Model):
         related_name="players"
     )
 
-    created_at = models.DateTimeField(auto_now=True)
+    created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self) -> CharField:
         return self.nickname
